@@ -1,0 +1,3 @@
+[submodule "cli/fairseq"]
+	path = cli/fairseq
+	url = https://github.com/AI4Bharat/IndicXlit.git
