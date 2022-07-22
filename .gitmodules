@@ -3,4 +3,4 @@
 	url = https://github.com/AI4Bharat/IndicXlit.git
 [submodule "fairseq"]
 	path = fairseq
-	url = ./fairseq
+	url = https://github.com/pytorch/fairseq.git
