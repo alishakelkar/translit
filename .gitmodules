@@ -1,0 +1,3 @@
+[submodule "IndicXlit"]
+	path = IndicXlit
+	url = https://github.com/AI4Bharat/IndicXlit.git
