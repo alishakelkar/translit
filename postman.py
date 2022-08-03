@@ -53,21 +53,10 @@ def signin():
     d = pd.read_csv(output_path,  encoding='utf8')
     df = pd.DataFrame(d)
 
-    '''
-    with open('daf.json', 'w', encoding='utf-8') as file:
-        data = df.to_json(file, force_ascii=False)
-
-    new_df = pd.read_json('daf.json')
-    '''
-
     df_json = df.to_json()
-    #json.loads(new_df)
-    
-    '''with open('encoded.json', 'w', encoding='utf-8') as file:
-        data = df_json
-        '''
+
     #return jsonify(json.dump(new_df))
     return jsonify({"response": "Success!", "input_path" : input_path, "output_path" : output_path, "lang_code": lang_code, "output" : df_json}) 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=5555)
